@@ -1,15 +1,19 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 import "./Home.css";
 
-function Home() {
+const Home = () => {
+  const navigate = useNavigate(); // Initialize navigate function
+
   return (
     <div className="home-container">
-      <h1 className="animate-text">Connecting People Across Faiths & Interests</h1>
-      <p>Bringing communities together through shared events.</p>
-      <Link to="/events" className="btn btn-success">Explore Events</Link>
+      <h1 className="animate-text">Welcome to CommunionHub</h1>
+      <p>Your go-to platform for events and networking!</p>
+      <button className="explore-btn" onClick={() => navigate("/events")}>
+        Explore Events
+      </button>
     </div>
   );
-}
+};
 
 export default Home;

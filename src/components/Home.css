@@ -1,14 +1,35 @@
+/* Home Container */
 .home-container {
-    text-align: center;
-    margin-top: 50px;
-  }
-  
-  .animate-text {
-    animation: fadeIn 1.5s ease-in-out;
-  }
-  
-  @keyframes fadeIn {
-    0% { opacity: 0; transform: translateY(-10px); }
-    100% { opacity: 1; transform: translateY(0); }
-  }
-  
+  text-align: center;
+  color: rgb(20, 15, 29);
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+}
+
+/* Animated Text */
+.animate-text {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Explore Button */
+.explore-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.explore-btn:hover {
+  background-color: #e68900;
+}
